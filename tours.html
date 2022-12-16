@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favico.ico">
+</head>
+<body>
+    <header class="index responsive" id="header">
+        <div class="header flex">
+            <p class="fa-bars-icon" onclick="chamoshla()"><i class="fa-solid fa-bars"></i></p>
+            <h1> <a href="index.html">logo</a> </h1>
+            <nav id="nav" class="nav"></nav>
+        </div>
+    </header>
+    <main class="tours">
+        <div class="socials">
+            <img src="img/facebook.png" alt="facebook">
+            <img src="img/instagram.png" alt="instagram">
+        </div>
+        <h1>tours in georgia</h1>
+
+        <div class="grid">
+            <article>
+                <img src="img/oldtbilisi.jpg" alt="old tbilisi">
+                <div class="price">
+                    <h2>ძველი თბილისი</h2>
+                    <p>from $400</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/mtskheta.jpg" alt="mtskheta">
+                <div class="price">
+                    <h2>მცხეთა</h2>
+                    <p>from $275</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/telavi.jpg" alt="telavi">
+                <div class="price">
+                    <h2>თელავი</h2>
+                    <p>from $190</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/kazbegi.jpg" alt="kazbegi">
+                <div class="price">
+                    <h2>ყაზბეგი</h2>
+                    <p>from $600</p>
+                </div>
+            </article>
+        </div>
+        
+        <h1>photo gallery</h1>
+        <div class="owl-carousel owl-theme gallery">
+            <div class="item">
+                <section>
+                    <img src="img/hotel.jpg" alt="hotels">
+                    <p>hotel</p>
+                </section>
+            </div>
+            <div class="item">
+                <section>
+                    <img src="img/rooms.jpg" alt="rooms">
+                    <p>rooms</p>
+                </section>
+            </div>
+            <div class="item">
+                <section>
+                    <img src="img/pool.jpg" alt="pools">
+                    <p>pool</p>
+                </section>
+            </div>
+            <div class="item">
+                <section>
+                    <img src="img/spa.jpg" alt="spa">
+                    <p>spa</p>
+                </section>
+            </div>
+            <div class="item">
+                <section>
+                    <img src="img/dinner.webp" alt="dinner">
+                    <p>dinner</p>
+                </section>
+            </div>
+            <div class="item">
+                <section>
+                    <img src="img/garden.jpg" alt="garden">
+                    <p>garden</p>
+                </section>
+            </div>
+            
+        
+        </div>
+       
+        <a href="#" class="all">all tours</a>
+
+        <div class="chatbutton" onclick="gamochena()">
+            <p><i class="fa-regular fa-envelope fa-beat" style="--fa-animation-duration: 1s;"></i></p>
+        </div>
+
+        <div class="chat" id="chat">
+            <div class="chatheader flex">
+                <p>მოგვწერეთ შეტყობინება</p>
+                <p onclick="gakroba()" class="fa-x-icon"><i class="fa-solid fa-x"></i></p>
+            </div>
+            <div class="chatmain">
+                <input type="text" name="firstname" id="firstname" placeholder="ჩაწერე სახელი">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="ჩაწერეთ თქვენი შეტყობინება"></textarea>
+                <p class="send" onclick="gakroba()">გაგზავნა</p>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- <footer class="footer flex">
+            <div class="about">
+                <div class="adress flex">
+                    <p><i class="fa-solid fa-map-location-dot"></i></p>
+                    <p>თბილისი, მარჯანიშილი N677</p>
+                </div>
+                <div class="adress flex">
+                    <p><i class="fa-solid fa-phone"></i></p>
+                    <p>+995 500 222 333</p>
+                </div>
+                <div class="adress flex">
+                    <p><i class="fa-regular fa-envelope"></i></p>
+                    <p>travel@agency.com</p>
+                </div>
+
+            </div>
+            <div class="about1">
+                <h3>about the company</h3>
+                <p>ჩვენი კომპანია თქვენს სამსახურშია 2010-წლიდან.</p>
+            </div>
+
+    </footer> -->
+    <script src="https://kit.fontawesome.com/0f065fd346.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    
+    <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>

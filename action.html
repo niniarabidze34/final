@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>travel</title>
+    <link rel="icon" href="favico.ico">
+</head>
+<body class="action">
+    <header></header>
+    <main class="last">
+        <div class="socials">
+            <img src="img/facebook.png" alt="facebook">
+            <img src="img/instagram.png" alt="instagram">
+        </div>
+
+        <h1>თქვენი შეტყობინება წარმატებით გაიგზავნა</h1>
+
+       <a href="index.html"> გთხოვთ დაბრუნდეთ მთავარ გვერდზე</a>
+
+       <div class="chatbutton" onclick="gamochena()">
+            <p><i class="fa-regular fa-envelope  fa-beat" style="--fa-animation-duration: 1s;"></i></p>
+        </div>
+
+    <div class="chat" id="chat">
+        <div class="chatheader flex">
+            <p>მოგვწერეთ შეტყობინება</p>
+            <p onclick="gakroba()" class="fa-x-icon"><i class="fa-solid fa-x"></i></p>
+        </div>
+        <div class="chatmain">
+            <input type="text" name="firstname" id="firstname" placeholder="ჩაწერე სახელი">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="ჩაწერეთ თქვენი შეტყობინება"></textarea>
+            <p class="send" onclick="gakroba()">გაგზავნა</p>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

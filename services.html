@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favico.ico">
+</head>
+<body>
+    <header class="index responsive" id="header">
+        <div class="header flex">
+            <p class="fa-bars-icon" onclick="chamoshla()"><i class="fa-solid fa-bars"></i></p>
+            <h1> <a href="index.html">logo</a> </h1>
+            <nav id="nav" class="nav"></nav>
+        </div>
+    </header>
+    <main>
+        <div class="socials">
+            <img src="img/facebook.png" alt="facebook">
+            <img src="img/instagram.png" alt="instagram">
+        </div>
+        <div class="chatbutton" onclick="gamochena()">
+            <p><i class="fa-regular fa-envelope fa-beat" style="--fa-animation-duration: 1s;"></i></p>
+        </div>
+
+        <div class="chat" id="chat">
+            <div class="chatheader flex">
+                <p>მოგვწერეთ შეტყობინება</p>
+                <p onclick="gakroba()" class="fa-x-icon"><i class="fa-solid fa-x"></i></p>
+            </div>
+            <div class="chatmain">
+                <input type="text" name="firstname" id="firstname" placeholder="ჩაწერე სახელი">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="ჩაწერეთ თქვენი შეტყობინება"></textarea>
+                <p class="send" onclick="gakroba()">გაგზავნა</p>
+            </div>
+        </div>
+
+
+
+        <div class="mainoffer">
+            <article class="offer">
+                <h2>ჩვენ გთავაზობთ</h2>
+                <p><i class="fa-solid fa-check"></i> სასტუმროს ჯავშანი</p>
+                <p><i class="fa-solid fa-check"></i> ტრანსფერი</p>
+                <p><i class="fa-solid fa-check"></i> სერთიფიცირებული გიდი</p>
+                <p><i class="fa-solid fa-check"></i> სატრანსპორტო სერვისი</p>
+                <p><i class="fa-solid fa-check"></i> ბილეთები</p>
+    
+            </article>
+            <div class="service">
+                <img src="img/service1.jpg" alt="georgia">
+            </div>
+            <div class="service">
+                <img src="img/service2.jpg" alt="georegia">
+            </div>
+            <article class="offer">
+                <h2>აირჩიე შენი ტური</h2>
+                <p><i class="fa-solid fa-check"></i> კულტურა</p>
+                <p><i class="fa-solid fa-check"></i> კულინარიული</p>
+                <p><i class="fa-solid fa-check"></i> სათავგადასავლო</p>
+                <p><i class="fa-solid fa-check"></i> სანაპირო</p>
+                <p><i class="fa-solid fa-check"></i> სამთო-სათხილამურო</p>
+    
+            </article>
+        </div>
+        
+
+
+    </main>
+    <footer class="footer flex servfooter">
+            <div class="about">
+                <div class="adress flex">
+                    <p><i class="fa-solid fa-map-location-dot"></i></p>
+                    <p>თბილისი, მარჯანიშილი N677</p>
+                </div>
+                <div class="adress flex">
+                    <p><i class="fa-solid fa-phone"></i></p>
+                    <p>+995 500 222 333</p>
+                </div>
+                <div class="adress flex">
+                    <p><i class="fa-regular fa-envelope"></i></p>
+                    <p>travel@agency.com</p>
+                </div>
+
+            </div>
+            <div class="about1">
+                <h3>about the company</h3>
+                <p>ჩვენი კომპანია თქვენს სამსახურშია 2010-წლიდან.</p>
+            </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/0f065fd346.js" crossorigin="anonymous"></script>
+
+    <script src="js/burger.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
